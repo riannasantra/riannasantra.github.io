@@ -75,19 +75,180 @@
   
   /* Section */
   section {
-    padding: 50px 0;
-    text-align: center;
+    padding: 50px 25px;
     background-color: #fff;
     margin: 20px auto;
     max-width: 900px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
+
+  section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  section p {
+    margin-bottom: 20px;
+  }
+
+  /* General styling for the Projects section */
+#projects {
+    padding: 50px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Projects container styling */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual project card styling */
+.project-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff6f91;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* Add hover effect */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the project date */
+.project-date {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #888;
+    background-color: #ffedf2;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/* Styling for the tags container */
+.tags-container {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Ensures tags wrap to the next line if there's not enough space */
+    gap: 10px; /* Adds space between the tags */
+}
+
+/* Styling for individual tags */
+.tag {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
   /* Footer */
   footer {
     text-align: center;
-    padding: 20px;
+    margin-top: 50px;
     font-size: 14px;
     color: #888;
   }
+
+
+  /* Experience Section */
+#experience {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#experience h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Experience card styling */
+.experience-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-left: 5px solid #ff6f91; /* Left border with color accent */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for company and date */
+.experience-details {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.company {
+    font-weight: bold;
+    color: #ff6f91;
+}
+
+.date {
+    font-style: italic;
+}
+
+/* Paragraph styling for description */
+.experience-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
